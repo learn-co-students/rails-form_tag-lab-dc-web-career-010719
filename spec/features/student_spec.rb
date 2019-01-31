@@ -1,3 +1,4 @@
+require 'pry'
 require 'rails_helper'
 
 describe 'Route to view' do
@@ -31,6 +32,7 @@ describe 'form page' do
 
     click_on "Submit Student"
 
+    # binding.pry
     expect(page).to have_content("Margaery")
   end
 end
